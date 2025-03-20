@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="Author" content="Farhan Hanif Azhary">
+	</head>
+	<body>
+		<h2>HTML Forms</h2>
+		<form action="" method="GET">
+			<fieldset>
+			<legend>Formulir Pendaftaran</legend>
+				<table>
+					<tr>
+						<td width="30%" ><label>nama</label></td>
+						<td>:<input type="text" name="nama" required></td>
+					</tr>
+					<tr>
+						<td><label>NIM</label></td>
+						<td>:<input type="number" name="NIM"></td>
+					</tr>
+					<tr>
+						<td><label>password</label></td>
+						<td>:<input type="password" name="password"></td>
+					</tr>
+					<tr>
+						<td><label>Email</label></td>
+						<td>:<input type="email" name="email"></td>
+					</tr>
+					<tr>
+						<td><label>NIM</label></td>
+						<td>:<input type="number" name="nim"></td>
+					</tr>
+					<tr>
+						<td><label>Jenis Kelamin</label></td>
+						<td>:<input type="radio" name="jenisKelamin" value="L" width="20%">Laki-laki
+						<input type="radio" name="jenisKelamin" value="p">Perempuan</td>
+					</tr>
+					<tr>
+						<td><label>Tanggal Lahir</label></td>
+						<td>:<input type="date" name="tanggalLahir"></td>
+					<tr>
+						<td><label>Hobi</label></td>
+						<td>:<input type="checkbox" name="hobi" value="membaca">Membaca
+						<input type="checkbox" name="hobi" value="olahraga">Olahraga
+						<input type="checkbox" name="hobi" value="Menulis">Menulis</td>
+					</tr>
+					<tr>
+						<td><label>Pas Foto</label></td>
+						<td>:<input type="file" name="foto" accept="image/png"></td>
+					</tr>
+					<tr>
+						<td><label for="negara">Negara</label></td>
+						<td>:
+						<select id="negara" name="negara">
+							<option value="indonesia">Indonesia</option>
+							<option value="malaysia">Malaysia</option>
+							<option value="singapura">Singapura</option>
+							<option value="thailand">Thailand</option>
+						</select>
+					</tr>
+					<tr>
+						<td><label>prodi</label></td>
+						<td>:
+							<select name="prodi" required>
+								<option value="">Pilih Prodi</option>
+								<option value="mi">Manajemen Informatika</option>
+								<option value="tk">Teknik Komputer</option>
+								<option value="trpl">Teknologi Rekayasa Perangkat Lunak</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td><label>Alamat Lengkap</label></td>
+						<td>:
+							<textarea name="alamat" rows="5" cols="50"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+						<input type="submit" value="Simpan">
+						<input type="reset">
+						</td>
+					</tr>
+				</table>
+			</fieldset>
+		</form>	
+	</body>
+</html>
+
+<!--POST tidak akan mengirimkan data-->
+

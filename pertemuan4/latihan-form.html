@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="author" content="Farhan Hanif Azhary">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta author="Farhan Hanif Azhary">
+		<title>Latihan Form</title>
+		<style>
+			body {
+				background-color: #000066;
+			}
+			
+			h2 {
+				text-align: center;
+			}
+			
+			#text-biru {
+				color: #0000ff;
+				font-style: oblique;
+			}
+			
+			input[type="text"] {
+				border-radius: 15px;
+				background-color: #ffC0CB;
+				color: #0000FF;
+				padding: 10px;
+				height: 50%;
+				width: 80%;
+				border-color: #000000;
+				margin-left: 20px;
+			}
+			input[type="tel"] {
+				border-radius: 15px;
+				background-color: #ffC0CB;
+				color: #0000FF;
+				padding: 10px;
+				height: 50%;
+				width: 80%;
+				border-color: #000000;
+				margin-left: 20px;
+			}
+			input[type="email"] {
+				border-radius: 15px;
+				background-color: #ffC0CB;
+				color: #0000FF;
+				padding: 10px;
+				height: 50%;
+				width: 80%;
+				border-color: #000000;
+				margin-left: 20px;
+			}
+			
+			input[type="date"] {
+				border-radius: 15px;
+				background-color: #ffC0CB;
+				color: #0000FF;
+				padding: 10px;
+				height: 50%;
+				width: 80%;
+				border-color: #000000;
+				margin-left: 20px;
+			}
+			
+			select  {
+				border-radius: 15px;
+				background-color: #ffC0CB;
+				color: #0000FF;
+				padding: 10px;
+				height: 50%;
+				width: 80%;;
+				border-color: #000000;
+				margin-left: 20px;
+			}
+			
+			textarea {
+				border-radius: 15px;
+				background-color: #ffC0CB;
+				color: #0000FF;
+				padding: 10px;
+				height: 50%;
+				width: 80%;
+				border-color: #000000;
+				margin-left: 20px;
+			}
+			
+			input[type="file"] {
+				border-radius: 15px;
+				background-color: #ffC0CB;
+				color: #0000FF;
+				padding: 10px;
+				height: 50%;
+				width: 80%;
+				border-color: #000000;
+				margin-left: 20px;
+			}
+			
+			* {
+				color: #ffffff;
+			}
+			
+			fieldset {
+				background-color: #2c48ff;
+				margin-bottom: 20px;
+			}
+			
+			::placeholder {
+				color: #008000;
+			}
+			
+			#button {
+				color: #000000;
+				background-color: #ffffff;
+				border-radius: 15px;
+				width: 100%;
+			}
+			
+			#button:hover {
+				border-radius: 15px;
+				background-color: #0000ff;
+				color: #fffff;
+				width: 50%;
+			}
+			
+			header {
+				background-color: #555555;
+				color: #ffffff;
+				text-align: center;
+				width: 100%;
+				height: 50px;
+			}
+			
+			main {
+				position: relative;
+				width: 100%;
+				height: 100%;
+			}
+			
+			footer {
+				background-color: #555555;
+				color: #ffffff;
+				text-align: center;
+				width: 100%;
+				margin-top: 20px;
+				position: fixed;
+				bottom: 0;
+			}
+			
+			td {
+				border: red 3px solid;
+			}
+			
+			#btn {
+				align-content: center;
+				display: flex;
+			}
+			
+			label {
+				margin-right: 50px;
+			}
+			
+			input[type="radio"] {
+				margin-left: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<header><h1>Landing Page</h1></header>
+		<main>
+		<h2>Form Pendaftaran</h2>
+		<form action="" method="GET">
+			<table width="100%">
+				<tr>
+					<td width="50%">
+						<fieldset>
+							<legend>Data Pribadi</legend>
+							<table>
+								<tr>
+									<td id="td1"><label>Nama Lengkap</label></td>
+									<td id="td2">:<input type="text" name="nama" placeholder="Nama Lengkap" required></td>
+								</tr>
+								
+								<tr>
+									<td id="td1"><label>Email</label></td>
+									<td id="td2">:<input type="email" name="email" required></td>
+								</tr>
+								
+								<tr>
+									<td id="td1"><label>Nomor Telepon</label></td>
+									<td id="td2">:<input type="tel" name="telepon" required></td>
+								</tr>
+								
+								<tr>
+									<td id="td1"><label>Alamat</label></td>
+									<td id="td2">:<textarea rows="5" cols="30" required></textarea></td>
+								</tr>
+								
+								<tr>
+									<td id="td1"><label>Tanggal Lahir</label></td>
+									<td id="td2">:<input type="date" name="tl" required></td>
+								</tr>
+								
+								<tr>
+									<td id="td1"><label>Jenis Kelamin</label></td>
+									<td id="td2">:<input type="radio" name="jk" value="L" required>Laki-Laki
+									<input type="radio" name="jk" value="P" required>Perempuan</td>
+								</tr>
+								
+								<tr>
+									<td id="td1"><label>Agama</label></td>
+									<td id="td2">:
+									<select name="agama" required>
+										<option value="" placeholder>Pilih Agama</option>
+										<option value="islam">Islam</option>
+										<option value="kristen-protestan">Kristen Protestan</option>
+										<option value="kristen-katolik">Kristen Katolik</option>
+										<option value="hindu">Hindu</option>
+										<option value="budha">Budha</option>
+										<option value="konghuchu">Konghucu</option>
+									</select>
+								</tr>
+								
+								<tr>
+									<td id="td1"><label>Pendidikan Terakhir</label></td>
+									<td id="td2">:<input type="radio" name="pt" value="SMA" required>SMA
+									<input type="radio" name="pt" value="d3" required>D3
+									<input type="radio" name="pt" value="s1" required>S1</td>
+								</tr>
+								
+								<tr>
+									<td id="td1"><label>Pas Foto</label></td>
+									<td id="td2">:<input type="file" name="foto" accept="image/*" required></td>
+								</tr>
+								
+								<tr>
+									<td id="td1"><label>CV</label></td>
+									<td id="td2">:<input type="file" name="file" accept=".pdf" required></td>
+								</tr>
+							</table>
+						</fieldset>
+					</td>
+					<td valign="top">
+						<fieldset>
+							<legend>Data Orang Tua</legend>
+							<table>
+								<tr>
+									<td id="td1"><label>Nama Ayah</label></td>
+									<td id="td2">:<input type="text" name="nama-ayah" required></td>
+								</tr>
+								
+								<tr>
+									<td id="td1"><label>Pekerjaan Ayah</label></td>
+									<td id="td2">:<input type="text" name="pekerjaan-ayah" required></td>
+								</tr>
+								
+								<tr>
+									<td id="td1"><label>Alamat Ayah</label></td>
+									<td id="td2">:<textarea rows="3" cols="30" required></textarea></td>
+								</tr>
+								
+								<tr>
+									<td id="td1"><label>Nomor Telepon Ayah</label></td>
+									<td id="td2">:<input type="tel" name="telepon-ayah" required></td>
+								</tr>
+								
+								<tr>
+									<td id="td1"><label>Nama Ibu</label></td>
+									<td id="td2">:<input type="text" name="nama-ibu" required></td>
+								</tr>
+								
+								<tr>
+									<td id="td1"><label>Pekerjaan Ibu</label></td>
+									<td id="td2">:<input type="text" name="pekerjaan-ibu" required></td>
+								</tr>
+								
+								<tr>
+									<td id="td1"><label>Alamat Ibu</label></td>
+									<td id="td2">:<textarea rows="3" cols="30" required></textarea>
+								</tr>
+								
+								<tr>
+									<td id="td1"><label>Nomor Telepon Ibu</label></td>
+									<td id="td2">:<input type="tel" name="telepon-ibu" required></td>
+								</tr>
+							</table>
+							<table>
+								<tr id="btn">
+									<td>
+										<input id="button" type="submit" value="Submit">
+									</td>
+									<td>
+										<input id="button" type="reset">
+									</td>
+								</tr>
+							</table>
+						</fieldset>
+					</td>
+				</tr>
+			</table>
+		</form>
+		</main>
+		<footer>Copy right 2025</footer>
+	</body>
+</html>
