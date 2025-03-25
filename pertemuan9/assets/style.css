@@ -1,0 +1,55 @@
+
+.header {
+	background-color: #0A2463;
+	width: 100%;
+	height: 110px;
+	font-size: 1.3em;
+	text-align: center;
+	padding-top: 2px;
+	color: #ffffff;
+}
+
+.list-jurusan {
+		background-color: #3E92CC;
+		width: 30%;
+		float: left;
+		font-size: 0.9em;
+}
+
+.list-jurusan-content {
+		padding-top: 20px;
+		padding-left: 10px; 
+}
+
+.list-jurusan, .content {
+	height: 250px;
+}
+
+.content {
+	width: 70%;
+	float: left;
+}
+
+.footer {
+	background-color: #0A2463;
+	width: 100%;
+	height: 40px;
+	font-size: 0.9em;
+	text-align: center;
+	padding-top: 20px;
+	float: left;
+	color: #ffffff;
+}
+
+a {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+a:hover {
+	color: #000088;
+}
+
+a:active {
+	color: #880000;
+}
