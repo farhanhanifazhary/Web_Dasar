@@ -23,11 +23,22 @@
         $query_prepare->bind_param("ssss", $nim, $nama, $email, $alamat);
 
         if($query_prepare->execute()) {
-            echo "Data mahasiswa berhasil disimpan";
+            // echo "Data mahasiswa berhasil disimpan";
+            echo "<script>
+                    alert('Data mahasiswa berhasil disimpan');
+                    window.location.href = 'data-mahasiswa.php';
+                </script>";
         }else {
-            echo "Data mahasiswa gagal disimpan" . $query_prepare->error;
+            echo "<script>
+                    alert('Data mahasiswa gagal disimpan');
+                    window.location.href = 'form-mahasiswa.php';
+                </script>";
         }
 
+        
+
         $query_prepare->close();
+
+        
     }
 ?>

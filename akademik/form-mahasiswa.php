@@ -9,6 +9,7 @@
   <body>
     <div class="container">
         <h1>Form Mahasiswa</h1>
+        <a href="data-mahasiswa.php" class="btn btn-success btn-sm">Data Mahasiswa</a>
         <form action="proses-mahasiswa.php" method="POST">
             <div class="mb-3">
                 <label for="nim" class="form-label">NIM</label>
