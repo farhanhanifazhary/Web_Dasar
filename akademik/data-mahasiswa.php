@@ -40,11 +40,12 @@
                 <td><?= $row['nama'] ?></td>
                 <td><?= $row['email'] ?></td>
                 <td><?= $row['alamat'] ?></td>
-                <td>
-                    <a href="update-mahasiswa.php<?= $row['id'] ?>" class="btn btn-warning btn-sm">Edit</a>
-                    <form action="" method="POST">
-                        <input type="submit" name="delete" value="hapus" class="btn btn-danger btn-sm">
-                    </form>
+                <td class="text-nowrap">
+                    <div class="d-flex gap-1"><a href="update-mahasiswa.php?id=<?= $row['id'] ?>" name="update" class="btn btn-warning btn-sm">Edit</a>
+                    <form action="proses-mahasiswa.php" method="POST">
+                        <input type="hidden" name="id" value="<?= $row['id']?>">
+                        <input  type="submit" onclick="return confirm('Apakah anda yakin')" name="delete" value="hapus" class="btn btn-danger btn-sm">
+                    </form></div>
                 </td>
             </tr>
 
